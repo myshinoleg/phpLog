@@ -16,7 +16,7 @@ class db_Logger implements logger
         $this->password = "0000";
     }
 
-    public function SetConnection($host, $dbase, $username, $password)
+    public function setConnection($host, $dbase, $username, $password)
     {
         $this->host = $host;
         $this->dbase = $dbase;
@@ -24,7 +24,7 @@ class db_Logger implements logger
         $this->password = $password;
     }
 
-    public function Log($messege)
+    public function log($messege)
     {
         $this->_construct();
         $connection = new mysqli($this->host, $this->username, $this->password, $this->dbase);

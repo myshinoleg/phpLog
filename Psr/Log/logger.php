@@ -3,6 +3,6 @@ namespace Psr;
 
 interface logger
 {
-    public function Log($messege);
+    public function log($messege);
 }
 
