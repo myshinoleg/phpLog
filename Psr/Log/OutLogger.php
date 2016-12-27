@@ -1,5 +1,5 @@
 <?php
-namespace Psr;
+namespace Log;
 
 class OutLogger implements logger
 {

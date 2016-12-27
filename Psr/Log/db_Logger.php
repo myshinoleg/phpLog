@@ -1,5 +1,5 @@
 <?php
-namespace Psr;
+namespace Log;
 
 class db_Logger implements logger
 {

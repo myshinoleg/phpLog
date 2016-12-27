@@ -1,5 +1,5 @@
 <?php
-namespace Psr;
+namespace Log;
 
 interface logger
 {
