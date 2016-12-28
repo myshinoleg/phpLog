@@ -78,3 +78,4 @@ class DB_Logger extends ALogger
      }
 
 }
+
