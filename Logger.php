@@ -1,7 +1,45 @@
 <?php
-namespace Logs;
 
-class DBLogger implements Logger
+interface ILogger
+{
+    public function log($messege);
+}
+
+abstract class ALogger implements ILogger
+{
+    public static $instance;
+    private function _construct(){ }
+    private function _clone(){ }
+
+    public static function getInstance()
+    {
+        if (self::$instance)
+            return self::$instance;
+        elseif (self::$instance = ALogger())
+            return self::$instance;
+    }
+
+}
+
+class FileLogger extends ALogger
+{
+    public function log($messege)
+    {
+        file_put_contents('fileLog.txt', print_r(date('Y-m-d H:i:s ') . $messege, true));
+    }
+
+}
+
+class OutLogger extends ALogger
+{
+    public function log($messege)
+    {
+        echo date('Y-m-d H:i:s'), $messege;
+    }
+
+}
+
+class DB_Logger extends ALogger
 {
     private $host;
     private $dbase;
@@ -40,4 +78,6 @@ class DBLogger implements Logger
      }
 
 }
+
+
 
