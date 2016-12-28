@@ -1,7 +1,7 @@
 <?php
-namespace Log;
+namespace Logs;
 
-class OutLogger implements logger
+class OutLogger implements Logger
 {
     public function log($messege)
     {

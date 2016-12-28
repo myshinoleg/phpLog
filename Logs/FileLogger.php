@@ -1,7 +1,7 @@
 <?php
-namespace Log;
+namespace Logs;
 
-class FileLogger implements logger
+class FileLogger implements Logger
 {
     public function log($messege)
     {

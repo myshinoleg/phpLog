@@ -1,7 +1,7 @@
 <?php
-namespace Log;
+namespace Logs;
 
-class db_Logger implements logger
+class DBLogger implements Logger
 {
     private $host;
     private $dbase;

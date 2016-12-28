@@ -1,7 +1,7 @@
 <?php
-namespace Log;
+namespace Logs;
 
-interface logger
+interface Logger
 {
     public function log($messege);
 }

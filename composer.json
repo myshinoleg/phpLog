@@ -1,19 +1,12 @@
 {
-    "name": "Psr/Log",
-    "homepage": "https://github.com/myshinoleg/phpLog",
-    
-    "require": {
-        "php": ">=5.3.0",
-		"myshinoleg/phpLog":"dev-master"
+    "name":"Logs",
+    "version":"1.0.0",
+    "require":{
+        "php":">=5.3.0"
     },
-	"repositories":[
-        {
-            "type":"git",
-            "url":"https://github.com/myshinoleg/phpLog"
+    "autoload":{
+        "psr-0":{
+            "Logs":""
         }
-    ],
-			
-	"autoload":{
-    		"classmap":[""]
-		}
+    }
 }
